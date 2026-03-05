@@ -1,9 +1,9 @@
 services:
   fastapi-app:
     build: .
-    container_name: fastapi-container-lite
+    container_name: app-flask-yaelle
     ports:
-      - "8000:8000"
+      - "3006:3006"
     volumes:
       - .:/app
     environment:
