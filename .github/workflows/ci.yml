@@ -43,7 +43,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             whoami
-            docker pull ${{ secrets.DOCKERHUB_USERNAME }}/app_flask:latest
-            docker stop app_flask || true
-            docker rm app_flask || true
-            docker run -d --name app_flask -p 3006:3000 ${{ secrets.DOCKERHUB_USERNAME }}/app_flask:latest
+            docker pull ${{ secrets.DOCKERHUB_USERNAME }}/app-flask-yaelle:latest
+            docker stop app-flask-yaelle || true
+            docker rm app-flask-yaelle || true
+            docker run -d --name app-flask-yaelle -p 3006:3000 ${{ secrets.DOCKERHUB_USERNAME }}/app-flask-yaelle:latest
