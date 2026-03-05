@@ -16,4 +16,4 @@ EXPOSE 3006
 # Commande pour démarrer l'application
 #CMD ["uvicorn", "main:app", "--port", "8000", "--reload"]
 
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "3006"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "3000"]
